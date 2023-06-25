@@ -150,7 +150,7 @@ rm -rf /root/LICENSE
 rm -rf /root/README.md
 rm -rf /root/domain
 #sudo hostnamectl set-hostname $user
-secs_to_human "$(($(date +%s) - ${start}))"
+secs_to_human "$(($(date + %s) - ${start}))"
 echo ""
 echo -e ""
 sudo hostnamectl set-hostname $username
