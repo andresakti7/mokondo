@@ -1035,7 +1035,7 @@ echo -e ""
 sudo hostnamectl set-hostname $username
 echo -e "${green} Script Successfull Installed"
 echo ""
-echo -e "${green} Script Successfull Installed"
+#echo -e "${green} Script Successfull Installed"
 echo -e "#=======================================================#" | lolcat
 echo -e "#          Premium Script By Andre Sakti                #" | lolcat
 echo -e "#                                                       #" | lolcat
