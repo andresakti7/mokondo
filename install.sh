@@ -100,7 +100,7 @@ VALIDITY () {
 	VERSIONSC
     else
     echo -e "\e[31mScript Anda Telah Expired !!\e[0m";
-    echo -e "\e[31mTolong Renew Script di Telegram @AndreSakti_Store\e[0m"
+    echo -e "\e[31mTolong Renew Script di  @AndreSakti_Store\e[0m"
     exit 0
 fi
 }
@@ -152,7 +152,7 @@ datediff() {
 }
 mai="datediff "$Exp" "$DATE""
 
-# Status ExpiRED Active | Andre Sakti
+# Status ExpiRED Active | AndreSakti
 Info="(${green}Active${NC})"
 Error="(${RED}ExpiRED${NC})"
 today=`date -d "0 days" +"%Y-%m-%d"`
@@ -402,7 +402,7 @@ function password_default() {
     <code>User Script:</code> <code>$username</code>
     <code>Exp Script :</code> <code>$exp</code>
     ============================
-    (C) Copyright 2023 By Andre Sakti
+    (C) Copyright 2023 By AndreSakti
     ============================
 "
 
@@ -436,18 +436,12 @@ function make_folder_xray() {
 rm -rf /etc/vmess/.vmess.db
     rm -rf /etc/vless/.vless.db
     rm -rf /etc/trojan/.trojan.db
-    rm -rf /etc/vmesstrial/.vmesstrial.db
-    rm -rf /etc/vlesstrial/.vlesstrial.db
-    rm -rf /etc/trojantrial/.trojantrial.db
     rm -rf /etc/shadowsocks/.shadowsocks.db
     rm -rf /etc/ssh/.ssh.db
     mkdir -p /etc/xray
     mkdir -p /etc/vmess
     mkdir -p /etc/vless
     mkdir -p /etc/trojan
-    mkdir -p /etc/vmesstrial
-    mkdir -p /etc/vlesstrial
-    mkdir -p /etc/trojantrial
     mkdir -p /etc/shadowsocks
     mkdir -p /usr/bin/xray/
     mkdir -p /var/log/xray/
@@ -459,9 +453,6 @@ rm -rf /etc/vmess/.vmess.db
     touch /etc/vmess/.vmess.db
     touch /etc/vless/.vless.db
     touch /etc/trojan/.trojan.db
-    touch /etc/vmesstrial/.vmesstrial.db
-    touch /etc/vlesstrial/.vlesstrial.db
-    touch /etc/trojantrial/.trojantrial.db
     touch /etc/shadowsocks/.shadowsocks.db
     touch /etc/ssh/.ssh.db
     }
@@ -871,14 +862,14 @@ rm -f /root/cert.pem
 print_success "All Packet"
 }
 
-#Instal Menu meki
+#Instal Menu
 function menu(){
     clear
     print_install "Memasang Menu Packet"
     wget -O ~/menu.zip "${REPO}menu/menu.zip" >/dev/null 2>&1
     mkdir /root/menu
     unzip menu.zip; -o/root/menu/ >/dev/null 2>&1
-#    7z e -p   ~/menu.zip -o/root/menu/ >/dev/null 2>&1
+#    7z e -pmeki   ~/menu.zip -o/root/menu/ >/dev/null 2>&1
     chmod +x /root/menu/*
     mv /root/menu/* /usr/local/sbin/
     #botmintod
@@ -922,6 +913,11 @@ cat >/etc/cron.d/bckpbb <<-END
 		SHELL=/bin/sh
 		PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 		0 5 * * * root /sbin/reboot
+	END
+	cat >/etc/cron.d/colmek <<-END
+		SHELL=/bin/sh
+		PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+		*/10 * * * * root /usr/local/sbin/limiter
 	END
 
     echo "*/1 * * * * root echo -n > /var/log/nginx/access.log" >/etc/cron.d/log.nginx
@@ -1029,6 +1025,59 @@ echo ""
 echo -e ""
 sudo hostnamectl set-hostname $username
 echo -e "${green} Script Successfull Installed"
+echo ""
+echo -e "    #====================================================================#" | lolcat
+echo -e "    #                  Premium Script By Andre Sakti                     #" | lolcat
+echo -e "    #                                                                    #" | lolcat
+echo -e "    #         ░█▀▀▀█ ░█▄─░█ ░█▀▀▀ 　 ░█▀▀█ ▀█▀ ░█▀▀▀ ░█▀▀█ ░█▀▀▀         #" | lolcat
+echo -e "    #         ░█──░█ ░█░█░█ ░█▀▀▀ 　 ░█▄▄█ ░█─ ░█▀▀▀ ░█─── ░█▀▀▀         #" | lolcat
+echo -e "    #         ░█▄▄▄█ ░█──▀█ ░█▄▄▄ 　 ░█─── ▄█▄ ░█▄▄▄ ░█▄▄█ ░█▄▄▄         #" | lolcat
+echo -e "    #                                                                    #" | lolcat
+echo -e "    #                        - Modded By : Andre Sakti                   #" | lolcat
+echo -e "    #          │▒│  /▒/      - Thanks To : All Member                    #" | lolcat
+echo -e "    #          │▒│ /▒/       - Whatsapp  : 081282840785                  #" | lolcat
+echo -e "    #          │▒|/▒/┬─┐     - Telegram  : t.me/AndreSakti_Store         #" | lolcat
+echo -e "    #          │▒│▒|▒│▒│     - For those who use this script,            #" | lolcat
+echo -e "    #         ┌┴─┴─┐-┘─┘       this script is still under development    #" | lolcat
+echo -e "    #         │▒┌──┘▒▒▒│     - Thanks for who using this script          #" | lolcat
+echo -e "    #         └┐▒▒▒▒▒▒┌┘                                                 #" | lolcat
+echo -e "    #                                                                    #" | lolcat
+echo -e "    #====================================================================#" | lolcat
+#echo -e " "
+echo -e "\033[0;32m ┌──────────────────────────────────────────┐\033[0m"
+echo -e "\033[0;32m │\033[0m            \033[0;36mPORT SERVICE INFO\033[0m             \033[0;32m|\033[0m"
+echo -e "\033[0;32m └──────────────────────────────────────────┘\033[0m"
+echo -e "\033[0;32m┌─────────────────────────────────────────────┐"
+echo -e "\033[0;32m│       >>> Service & Port                    │"
+echo -e "\033[0;32m│   - Open SSH                : 443, 80, 22   │"
+echo -e "\033[0;32m│   - Dropbear                : 443, 109, 143 │"
+echo -e "\033[0;32m│   - Dropbear Websocket      : 443, 109      │"
+echo -e "\033[0;32m│   - SSH Websocket SSL       : 443           │"
+echo -e "\033[0;32m│   - SSH Websocket           : 80            │"
+echo -e "\033[0;32m│   - OpenVPN SSL             : 443           │"
+echo -e "\033[0;32m│   - OpenVPN Websocket SSL   : 443           │"
+echo -e "\033[0;32m│   - OpenVPN TCP             : 443, 1194     │"
+echo -e "\033[0;32m│   - OpenVPN UDP             : 2200          │"
+echo -e "\033[0;32m│   - Nginx Webserver         : 443, 80, 81   │"
+echo -e "\033[0;32m│   - Haproxy Loadbalancer    : 443, 80       │"
+#echo -e "\033[0;32m│   - DNS Server              : 443, 53,      │"
+#echo -e "\033[0;32m│   - DNS Client              : 443, 88       │"
+echo -e "\033[0;32m│   - OpenVPN Websocket SSL   : 443           │"
+#echo -e "\033[0;32m│   - XRAY DNS (SLOWDNS)      : 443, 53       │"
+echo -e "\033[0;32m│   - XRAY Vmess TLS          : 443           │"
+echo -e "\033[0;32m│   - XRAY Vmess gRPC         : 443           │"
+echo -e "\033[0;32m│   - XRAY Vmess None TLS     : 80            │"
+echo -e "\033[0;32m│   - XRAY Vless TLS          : 443           │"
+echo -e "\033[0;32m│   - XRAY Vless gRPC         : 443           │"
+echo -e "\033[0;32m│   - XRAY Vless None TLS     : 80            │"
+echo -e "\033[0;32m│   - Trojan gRPC             : 443           │"
+echo -e "\033[0;32m│   - Trojan WS               : 443           │"
+echo -e "\033[0;32m│   - Shadowsocks WS          : 443           │"
+echo -e "\033[0;32m│   - BadVPN 1                : 7100          │"
+echo -e "\033[0;32m│   - BadVPN 2                : 7200          │"
+echo -e "\033[0;32m│   - BadVPN 3                : 7300          │"
+#echo -e "\033[0;32m│   - Proxy Squid             : 3128          │"
+echo -e "\033[0;32m└─────────────────────────────────────────────┘"
 echo ""
 read -p "$( echo -e "Press ${YELLOW}[ ${NC}${YELLOW}Enter${NC} ${YELLOW}]${NC} For Reboot") "
 reboot
