@@ -1026,58 +1026,58 @@ echo -e ""
 sudo hostnamectl set-hostname $username
 echo -e "${green} Script Successfull Installed"
 echo ""
-echo -e "    #====================================================================#" | lolcat
-echo -e "    #                  Premium Script By Andre Sakti                     #" | lolcat
-echo -e "    #                                                                    #" | lolcat
-echo -e "    #         ░█▀▀▀█ ░█▄─░█ ░█▀▀▀ 　 ░█▀▀█ ▀█▀ ░█▀▀▀ ░█▀▀█ ░█▀▀▀         #" | lolcat
-echo -e "    #         ░█──░█ ░█░█░█ ░█▀▀▀ 　 ░█▄▄█ ░█─ ░█▀▀▀ ░█─── ░█▀▀▀         #" | lolcat
-echo -e "    #         ░█▄▄▄█ ░█──▀█ ░█▄▄▄ 　 ░█─── ▄█▄ ░█▄▄▄ ░█▄▄█ ░█▄▄▄         #" | lolcat
-echo -e "    #                                                                    #" | lolcat
-echo -e "    #                        - Modded By : Andre Sakti                   #" | lolcat
-echo -e "    #          │▒│  /▒/      - Thanks To : All Member                    #" | lolcat
-echo -e "    #          │▒│ /▒/       - Whatsapp  : 081282840785                  #" | lolcat
-echo -e "    #          │▒|/▒/┬─┐     - Telegram  : t.me/AndreSakti_Store         #" | lolcat
-echo -e "    #          │▒│▒|▒│▒│     - For those who use this script,            #" | lolcat
-echo -e "    #         ┌┴─┴─┐-┘─┘       this script is still under development    #" | lolcat
-echo -e "    #         │▒┌──┘▒▒▒│     - Thanks for who using this script          #" | lolcat
-echo -e "    #         └┐▒▒▒▒▒▒┌┘                                                 #" | lolcat
-echo -e "    #                                                                    #" | lolcat
-echo -e "    #====================================================================#" | lolcat
+echo -e "#=======================================================#" | lolcat
+echo -e "#          Premium Script By Andre Sakti                #" | lolcat
+echo -e "#                                                       #" | lolcat
+echo -e "# ░█▀▀▀█ ░█▄─░█ ░█▀▀▀ 　 ░█▀▀█ ▀█▀ ░█▀▀▀ ░█▀▀█ ░█▀▀▀    #" | lolcat
+echo -e "# ░█──░█ ░█░█░█ ░█▀▀▀ 　 ░█▄▄█ ░█─ ░█▀▀▀ ░█─── ░█▀▀▀    #" | lolcat
+echo -e "# ░█▄▄▄█ ░█──▀█ ░█▄▄▄ 　 ░█─── ▄█▄ ░█▄▄▄ ░█▄▄█ ░█▄▄▄    #" | lolcat
+echo -e "#                                                       #" | lolcat
+echo -e "#                                                       #" | lolcat
+echo -e "#  │▒│  /▒/                                             #" | lolcat
+echo -e "#  │▒│ /▒/       - Created By : Andre Sakti             #" | lolcat
+echo -e "#  │▒|/▒/┬─┐     - Thanks To  : All Member              #" | lolcat
+echo -e "#  │▒│▒|▒│▒│     - Whatsapp   : 081282840785            #" | lolcat
+echo -e "# ┌┴─┴─┐-┘─┘     - Telegram   : t.me/AndreSakti_Store   #" | lolcat
+echo -e "# │▒┌──┘▒▒▒│     - Thanks for who using this script     #" | lolcat
+echo -e "# └┐▒▒▒▒▒▒┌┘                                            #" | lolcat
+echo -e "#                                                       #" | lolcat
+echo -e "#=======================================================#" | lolcat
 #echo -e " "
-echo -e "\033[0;32m ┌──────────────────────────────────────────┐\033[0m"
-echo -e "\033[0;32m │\033[0m            \033[0;36mPORT SERVICE INFO\033[0m             \033[0;32m|\033[0m"
-echo -e "\033[0;32m └──────────────────────────────────────────┘\033[0m"
-echo -e "\033[0;32m┌─────────────────────────────────────────────┐"
-echo -e "\033[0;32m│       >>> Service & Port                    │"
-echo -e "\033[0;32m│   - Open SSH                : 443, 80, 22   │"
-echo -e "\033[0;32m│   - Dropbear                : 443, 109, 143 │"
-echo -e "\033[0;32m│   - Dropbear Websocket      : 443, 109      │"
-echo -e "\033[0;32m│   - SSH Websocket SSL       : 443           │"
-echo -e "\033[0;32m│   - SSH Websocket           : 80            │"
-echo -e "\033[0;32m│   - OpenVPN SSL             : 443           │"
-echo -e "\033[0;32m│   - OpenVPN Websocket SSL   : 443           │"
-echo -e "\033[0;32m│   - OpenVPN TCP             : 443, 1194     │"
-echo -e "\033[0;32m│   - OpenVPN UDP             : 2200          │"
-echo -e "\033[0;32m│   - Nginx Webserver         : 443, 80, 81   │"
-echo -e "\033[0;32m│   - Haproxy Loadbalancer    : 443, 80       │"
-#echo -e "\033[0;32m│   - DNS Server              : 443, 53,      │"
-#echo -e "\033[0;32m│   - DNS Client              : 443, 88       │"
-echo -e "\033[0;32m│   - OpenVPN Websocket SSL   : 443           │"
-#echo -e "\033[0;32m│   - XRAY DNS (SLOWDNS)      : 443, 53       │"
-echo -e "\033[0;32m│   - XRAY Vmess TLS          : 443           │"
-echo -e "\033[0;32m│   - XRAY Vmess gRPC         : 443           │"
-echo -e "\033[0;32m│   - XRAY Vmess None TLS     : 80            │"
-echo -e "\033[0;32m│   - XRAY Vless TLS          : 443           │"
-echo -e "\033[0;32m│   - XRAY Vless gRPC         : 443           │"
-echo -e "\033[0;32m│   - XRAY Vless None TLS     : 80            │"
-echo -e "\033[0;32m│   - Trojan gRPC             : 443           │"
-echo -e "\033[0;32m│   - Trojan WS               : 443           │"
-echo -e "\033[0;32m│   - Shadowsocks WS          : 443           │"
-echo -e "\033[0;32m│   - BadVPN 1                : 7100          │"
-echo -e "\033[0;32m│   - BadVPN 2                : 7200          │"
-echo -e "\033[0;32m│   - BadVPN 3                : 7300          │"
-#echo -e "\033[0;32m│   - Proxy Squid             : 3128          │"
-echo -e "\033[0;32m└─────────────────────────────────────────────┘"
+echo -e "    \033[0;32m ┌──────────────────────────────────────────┐\033[0m"
+echo -e "    \033[0;32m │\033[0m            \033[0;36mPORT SERVICE INFO\033[0m             \033[0;32m|\033[0m"
+echo -e "    \033[0;32m └──────────────────────────────────────────┘\033[0m"
+echo -e "    \033[0;32m┌─────────────────────────────────────────────┐"
+echo -e "    \033[0;32m│       >>> Service & Port                    │"
+echo -e "    \033[0;32m│   - Open SSH                : 443, 80, 22   │"
+echo -e "    \033[0;32m│   - Dropbear                : 443, 109, 143 │"
+echo -e "    \033[0;32m│   - Dropbear Websocket      : 443, 109      │"
+echo -e "    \033[0;32m│   - SSH Websocket SSL       : 443           │"
+echo -e "    \033[0;32m│   - SSH Websocket           : 80            │"
+echo -e "    \033[0;32m│   - OpenVPN SSL             : 443           │"
+echo -e "    \033[0;32m│   - OpenVPN Websocket SSL   : 443           │"
+echo -e "    \033[0;32m│   - OpenVPN TCP             : 443, 1194     │"
+echo -e "    \033[0;32m│   - OpenVPN UDP             : 2200          │"
+echo -e "    \033[0;32m│   - Nginx Webserver         : 443, 80, 81   │"
+echo -e "    \033[0;32m│   - Haproxy Loadbalancer    : 443, 80       │"
+#echo -e "    \033[0;32m│   - DNS Server              : 443, 53,      │"
+#echo -e "    \033[0;32m│   - DNS Client              : 443, 88       │"
+echo -e "    \033[0;32m│   - OpenVPN Websocket SSL   : 443           │"
+#echo -e "    \033[0;32m│   - XRAY DNS (SLOWDNS)      : 443, 53       │"
+echo -e "    \033[0;32m│   - XRAY Vmess TLS          : 443           │"
+echo -e "    \033[0;32m│   - XRAY Vmess gRPC         : 443           │"
+echo -e "    \033[0;32m│   - XRAY Vmess None TLS     : 80            │"
+echo -e "    \033[0;32m│   - XRAY Vless TLS          : 443           │"
+echo -e "    \033[0;32m│   - XRAY Vless gRPC         : 443           │"
+echo -e "    \033[0;32m│   - XRAY Vless None TLS     : 80            │"
+echo -e "    \033[0;32m│   - Trojan gRPC             : 443           │"
+echo -e "    \033[0;32m│   - Trojan WS               : 443           │"
+echo -e "    \033[0;32m│   - Shadowsocks WS          : 443           │"
+echo -e "    \033[0;32m│   - BadVPN 1                : 7100          │"
+echo -e "    \033[0;32m│   - BadVPN 2                : 7200          │"
+echo -e "    \033[0;32m│   - BadVPN 3                : 7300          │"
+#echo -e "    \033[0;32m│   - Proxy Squid             : 3128          │"
+echo -e "    \033[0;32m└─────────────────────────────────────────────┘"
 echo ""
 read -p "$( echo -e "Press ${YELLOW}[ ${NC}${YELLOW}Enter${NC} ${YELLOW}]${NC} For Reboot") "
 reboot
