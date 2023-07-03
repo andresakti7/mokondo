@@ -436,12 +436,18 @@ function make_folder_xray() {
 rm -rf /etc/vmess/.vmess.db
     rm -rf /etc/vless/.vless.db
     rm -rf /etc/trojan/.trojan.db
+    rm -rf /etc/vmesstrial/.vmesstrial.db
+    rm -rf /etc/vlesstrial/.vlesstrial.db
+    rm -rf /etc/trojantrial/.trojantrial.db
     rm -rf /etc/shadowsocks/.shadowsocks.db
     rm -rf /etc/ssh/.ssh.db
     mkdir -p /etc/xray
     mkdir -p /etc/vmess
     mkdir -p /etc/vless
     mkdir -p /etc/trojan
+    mkdir -p /etc/vmesstrial
+    mkdir -p /etc/vlesstrial
+    mkdir -p /etc/trojantrial
     mkdir -p /etc/shadowsocks
     mkdir -p /usr/bin/xray/
     mkdir -p /var/log/xray/
@@ -453,6 +459,9 @@ rm -rf /etc/vmess/.vmess.db
     touch /etc/vmess/.vmess.db
     touch /etc/vless/.vless.db
     touch /etc/trojan/.trojan.db
+    touch /etc/vmesstrial/.vmesstrial.db
+    touch /etc/vlesstrial/.vlesstrial.db
+    touch /etc/trojantrial/.trojantrial.db
     touch /etc/shadowsocks/.shadowsocks.db
     touch /etc/ssh/.ssh.db
     }
@@ -1026,6 +1035,7 @@ echo -e ""
 sudo hostnamectl set-hostname $username
 echo -e "${green} Script Successfull Installed"
 echo ""
+echo -e "${green} Script Successfull Installed"
 echo -e "#=======================================================#" | lolcat
 echo -e "#          Premium Script By Andre Sakti                #" | lolcat
 echo -e "#                                                       #" | lolcat
