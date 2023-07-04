@@ -439,6 +439,9 @@ rm -rf /etc/vmess/.vmess.db
     rm -rf /etc/vmesstrial/.vmesstrial.db
     rm -rf /etc/vlesstrial/.vlesstrial.db
     rm -rf /etc/trojantrial/.trojantrial.db
+    rm -rf /etc/vmessbw/.vmessbw.db
+    rm -rf /etc/vlessbw/.vlessbw.db
+    rm -rf /etc/trojanbw/.trojanbw.db
     rm -rf /etc/shadowsocks/.shadowsocks.db
     rm -rf /etc/ssh/.ssh.db
     mkdir -p /etc/xray
@@ -448,6 +451,9 @@ rm -rf /etc/vmess/.vmess.db
     mkdir -p /etc/vmesstrial
     mkdir -p /etc/vlesstrial
     mkdir -p /etc/trojantrial
+    mkdir -p /etc/vmessbw
+    mkdir -p /etc/vlessbw
+    mkdir -p /etc/trojanbw
     mkdir -p /etc/shadowsocks
     mkdir -p /usr/bin/xray/
     mkdir -p /var/log/xray/
@@ -462,6 +468,9 @@ rm -rf /etc/vmess/.vmess.db
     touch /etc/vmesstrial/.vmesstrial.db
     touch /etc/vlesstrial/.vlesstrial.db
     touch /etc/trojantrial/.trojantrial.db
+    touch /etc/vmessbw/.vmessbw.db
+    touch /etc/vlessbw/.vlessbw.db
+    touch /etc/trojanbw/.trojanbw.db
     touch /etc/shadowsocks/.shadowsocks.db
     touch /etc/ssh/.ssh.db
     }
