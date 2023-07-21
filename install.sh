@@ -443,9 +443,9 @@ rm -rf /etc/vmess/.vmess.db
     rm -rf /etc/vlessbw/.vlessbw.db
     rm -rf /etc/trojanbw/.trojanbw.db
     rm -rf /etc/shadowsocks/.shadowsocks.db
-    rm -rf /etc/limit/trojan
-    rm -rf /etc/limit/vmess
-    rm -rf /etc/limit/vless
+#    rm -rf /etc/limit/trojan
+#    rm -rf /etc/limit/vmess
+#    rm -rf /etc/limit/vless
     rm -rf /etc/ssh/.ssh.db
     mkdir -p /etc/xray
     mkdir -p /etc/vmess
@@ -458,7 +458,7 @@ rm -rf /etc/vmess/.vmess.db
     mkdir -p /etc/vlessbw
     mkdir -p /etc/trojanbw
     mkdir -p /etc/shadowsocks
-    mkdir -p /etc/limit
+#    mkdir -p /etc/limit
     mkdir -p /usr/bin/xray/
     mkdir -p /var/log/xray/
     mkdir -p /var/www/html
@@ -476,9 +476,9 @@ rm -rf /etc/vmess/.vmess.db
     touch /etc/vlessbw/.vlessbw.db
     touch /etc/trojanbw/.trojanbw.db
     touch /etc/shadowsocks/.shadowsocks.db
-    touch /etc/limit/trojan
-    touch /etc/limit/vmess
-    touch /etc/limit/vless
+#    touch /etc/limit/trojan
+#    touch /etc/limit/vmess
+#    touch /etc/limit/vless
     touch /etc/ssh/.ssh.db
     }
 #Instal Xray
