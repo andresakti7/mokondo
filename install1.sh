@@ -463,6 +463,14 @@ rm -rf /etc/vmess/.vmess.db
     mkdir -p /usr/bin/xray/
     mkdir -p /var/log/xray/
     mkdir -p /var/www/html
+    mkdir -p /etc/trojan/limit-ip
+    mkdir -p /etc/vless/limit-ip
+    mkdir -p /etc/vmess/limit-ip
+    mkdir -p /etc/kyt/limit/ssh/ip
+    mkdir -p /etc/limit/vmess
+    mkdir -p /etc/limit/vless
+    mkdir -p /etc/limit/trojan
+    mkdir -p /etc/limit/ssh
     chmod +x /var/log/xray
     touch /etc/xray/domain
     touch /var/log/xray/access.log
@@ -481,6 +489,11 @@ rm -rf /etc/vmess/.vmess.db
 #    touch /etc/limit/vmess
 #    touch /etc/limit/vless
     touch /etc/ssh/.ssh.db
+    echo "& plughin Account" >>/etc/vmess/.vmess.db
+    echo "& plughin Account" >>/etc/vless/.vless.db
+    echo "& plughin Account" >>/etc/trojan/.trojan.db
+    echo "& plughin Account" >>/etc/shadowsocks/.shadowsocks.db
+    echo "& plughin Account" >>/etc/ssh/.ssh.db
     }
 #Instal Xray
 function install_xray() {
@@ -634,11 +647,129 @@ print_success "Password SSH"
 
 function udp_mini(){
 clear
-print_install "Memasang UDP MINI"
+print_install "Memasang Service Limit Quota"
+wget -q -O /usr/local/sbin/quota "${REPO}limit/quota"
+chmod +x /usr/local/sbin/quota
+chmod + x /usr/local/sbin/quota
+cd /usr/local/sbin/
+sed -i 's/\r//' quota
+cd
+wget -q -O /usr/bin/limit-ip "${REPO}limit/limit-ip"
+chmod +x /usr/bin/*
+cd /usr/bin
+sed -i 's/\r//' limit-ip
+cd
+clear
+#SERVICE LIMIT ALL IP
+cat >/etc/systemd/system/vmip.service << EOF
+[Unit]
+Description=My
+ProjectAfter=network.target
+
+[Service]
+WorkingDirectory=/root
+ExecStart=/usr/bin/limit-ip vmip
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+EOF
+systemctl daemon-reload
+systemctl restart vmip
+systemctl enable vmip
+
+cat >/etc/systemd/system/vlip.service << EOF
+[Unit]
+Description=My
+ProjectAfter=network.target
+
+[Service]
+WorkingDirectory=/root
+ExecStart=/usr/bin/limit-ip vlip
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+EOF
+systemctl daemon-reload
+systemctl restart vlip
+systemctl enable vlip
+
+cat >/etc/systemd/system/trip.service << EOF
+[Unit]
+Description=My
+ProjectAfter=network.target
+
+[Service]
+WorkingDirectory=/root
+ExecStart=/usr/bin/limit-ip trip
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+EOF
+systemctl daemon-reload
+systemctl restart trip
+systemctl enable trip
+#SERVICE LIMIT QUOTA
+
+#SERVICE VMESS
+cat >/etc/systemd/system/qmv.service << EOF
+[Unit]
+Description=My
+ProjectAfter=network.target
+
+[Service]
+WorkingDirectory=/root
+ExecStart=/usr/local/sbin/quota vmess
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+EOF
+systemctl daemon-reload
+systemctl restart qmv
+systemctl enable qmv
+
+#SERVICE VLESS
+cat >/etc/systemd/system/qmvl.service << EOF
+[Unit]
+Description=My 
+ProjectAfter=network.target
+
+[Service]
+WorkingDirectory=/root
+ExecStart=/usr/local/sbin/quota vless
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+EOF
+systemctl daemon-reload
+systemctl restart qmvl
+systemctl enable qmvl
+
+#SERVICE TROJAN
+cat >/etc/systemd/system/qmtr.service << EOF
+[Unit]
+Description=My 
+ProjectAfter=network.target
+
+[Service]
+WorkingDirectory=/root
+ExecStart=/usr/local/sbin/quota trojan
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+EOF
+systemctl daemon-reload
+systemctl restart qmtr
+systemctl enable qmtr
 # // Installing UDP Mini
-mkdir -p /usr/local/andresakti7/
-wget -q -O /usr/local/andresakti7/udp-mini "${REPO}badvpn/udp-mini"
-chmod +x /usr/local/andresakti7/udp-mini
+mkdir -p /usr/local/kyt/
+wget -q -O /usr/local/kyt/udp-mini "${REPO}badvpn/udp-mini"
+chmod +x /usr/local/kyt/udp-mini
 wget -q -O /etc/systemd/system/udp-mini-1.service "${REPO}badvpn/udp-mini-1.service"
 wget -q -O /etc/systemd/system/udp-mini-2.service "${REPO}badvpn/udp-mini-2.service"
 wget -q -O /etc/systemd/system/udp-mini-3.service "${REPO}badvpn/udp-mini-3.service"
@@ -654,12 +785,17 @@ systemctl disable udp-mini-3
 systemctl stop udp-mini-3
 systemctl enable udp-mini-3
 systemctl start udp-mini-3
-print_success "UDP MINI"
+print_success "Limit Quota Service"
 }
 
-function ssh_udp(){
+function ssh_slow(){
 clear
-print_success "SSH UDP"
+# // Installing UDP Mini
+print_install "Memasang modul SlowDNS Server"
+    wget -q -O /tmp/nameserver "${REPO}slowdns/nameserver" >/dev/null 2>&1
+    chmod +x /tmp/nameserver
+    bash /tmp/nameserver | tee /root/install.log
+ print_success "SlowDNS"
 }
 
 clear
