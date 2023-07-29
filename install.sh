@@ -489,11 +489,11 @@ rm -rf /etc/vmess/.vmess.db
 #    touch /etc/limit/vmess
 #    touch /etc/limit/vless
     touch /etc/ssh/.ssh.db
-    echo "& plughin Account" >>/etc/vmess/.vmess.db
-    echo "& plughin Account" >>/etc/vless/.vless.db
-    echo "& plughin Account" >>/etc/trojan/.trojan.db
-    echo "& plughin Account" >>/etc/shadowsocks/.shadowsocks.db
-    echo "& plughin Account" >>/etc/ssh/.ssh.db
+#    echo "& plughin Account" >>/etc/vmess/.vmess.db
+#    echo "& plughin Account" >>/etc/vless/.vless.db
+#    echo "& plughin Account" >>/etc/trojan/.trojan.db
+#    echo "& plughin Account" >>/etc/shadowsocks/.shadowsocks.db
+#    echo "& plughin Account" >>/etc/ssh/.ssh.db
     }
 #Instal Xray
 function install_xray() {
