@@ -1,4 +1,6 @@
 #Instal Menu
+# REPO    
+    REPO="https://raw.githubusercontent.com/andresakti7/mokondo/main/"
 function menu(){
     clear
     print_install "Memasang Menu Packet"
