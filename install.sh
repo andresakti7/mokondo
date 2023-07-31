@@ -440,6 +440,7 @@ rm -rf /etc/vmess/.vmess.db
     rm -rf /etc/trojan/.vmess1.db
     rm -rf /etc/vless/.vless1.db
     rm -rf /etc/trojan/.trojan1.db
+    rm -rf /etc/ssh/.ssh1.db
     rm -rf /etc/vmesstrial/.vmesstrial.db
     rm -rf /etc/vlesstrial/.vlesstrial.db
     rm -rf /etc/trojantrial/.trojantrial.db
@@ -486,6 +487,7 @@ rm -rf /etc/vmess/.vmess.db
     touch /etc/vmess/.vmess1.db
     touch /etc/vless/.vless1.db
     touch /etc/trojan/.trojan1.db
+    touch /etc/ssh/.ssh1.db
     touch /etc/vmesstrial/.vmesstrial.db
     touch /etc/vlesstrial/.vlesstrial.db
     touch /etc/trojantrial/.trojantrial.db
