@@ -460,6 +460,7 @@ rm -rf /etc/vmess/.vmess.db
     mkdir -p /etc/vmesstrial
     mkdir -p /etc/vlesstrial
     mkdir -p /etc/trojantrial
+    mkdir -p /etc/sshtrial
     mkdir -p /etc/vmessbw
     mkdir -p /etc/vlessbw
     mkdir -p /etc/trojanbw
@@ -491,6 +492,7 @@ rm -rf /etc/vmess/.vmess.db
     touch /etc/vmesstrial/.vmesstrial.db
     touch /etc/vlesstrial/.vlesstrial.db
     touch /etc/trojantrial/.trojantrial.db
+    touch /etc/sshtrial/.sshtrial.db
     touch /etc/vmessbw/.vmessbw.db
     touch /etc/vlessbw/.vlessbw.db
     touch /etc/trojanbw/.trojanbw.db
