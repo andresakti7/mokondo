@@ -455,6 +455,7 @@ rm -rf /etc/vmess/.vmess.db
     mkdir -p /etc/vmess
     mkdir -p /etc/vless
     mkdir -p /etc/trojan
+    mkdir -p /etc/ssh
     mkdir -p /etc/vmesstrial
     mkdir -p /etc/vlesstrial
     mkdir -p /etc/trojantrial
@@ -469,6 +470,7 @@ rm -rf /etc/vmess/.vmess.db
     mkdir -p /etc/trojan/limit-ip
     mkdir -p /etc/vless/limit-ip
     mkdir -p /etc/vmess/limit-ip
+    mkdir -p /etc/ssh/limit-ip
     mkdir -p /etc/kyt/limit/ssh/ip
     mkdir -p /etc/limit/vmess
     mkdir -p /etc/limit/vless
