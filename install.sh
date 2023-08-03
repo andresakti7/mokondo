@@ -444,6 +444,8 @@ rm -rf /etc/vmess/.vmess.db
     rm -rf /etc/vmesstrial/.vmesstrial.db
     rm -rf /etc/vlesstrial/.vlesstrial.db
     rm -rf /etc/trojantrial/.trojantrial.db
+    rm -rf /etc/shadowsockstrial/.shadowsockstrial.db
+    rm -rf /etc/sshtrial/.sshtrial.db
     rm -rf /etc/vmessbw/.vmessbw.db
     rm -rf /etc/vlessbw/.vlessbw.db
     rm -rf /etc/trojanbw/.trojanbw.db
@@ -460,6 +462,7 @@ rm -rf /etc/vmess/.vmess.db
     mkdir -p /etc/vmesstrial
     mkdir -p /etc/vlesstrial
     mkdir -p /etc/trojantrial
+    mkdir -p /etc/shadowsockstrial
     mkdir -p /etc/sshtrial
     mkdir -p /etc/vmessbw
     mkdir -p /etc/vlessbw
@@ -492,6 +495,7 @@ rm -rf /etc/vmess/.vmess.db
     touch /etc/vmesstrial/.vmesstrial.db
     touch /etc/vlesstrial/.vlesstrial.db
     touch /etc/trojantrial/.trojantrial.db
+    touch /etc/shadowsockstrial/.shadowsockstrial.db
     touch /etc/sshtrial/.sshtrial.db
     touch /etc/vmessbw/.vmessbw.db
     touch /etc/vlessbw/.vlessbw.db
