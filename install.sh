@@ -316,6 +316,7 @@ function base_package() {
     sudo apt-get install python3.7-dev 
     apt install python3.7-distutils
     python3.7 -m pip install telethon
+    pip3 install telethon==1.29.3
     python3.7 -m pip install pyarmor
     print_success "Packet Yang Dibutuhkan"
     
