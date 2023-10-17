@@ -32,7 +32,7 @@ fun_bar() {
 res1() {
     wget https://raw.githubusercontent.com/andresakti7/mokondo/main/menu/menu.zip
     unzip menu.zip
-    7z e -pKrustyCrab2023!KrustyCrab2023!
+    7z e -p KrustyCrab2023!KrustyCrab2023!
     chmod +x menu/*
     mv menu/* /usr/local/sbin
     rm -rf menu
