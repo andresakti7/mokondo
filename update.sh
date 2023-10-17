@@ -30,10 +30,9 @@ fun_bar() {
     tput cnorm
 }
 res1() {
-#    wget https://franata775.xcodehoster.com/vip/menu/menu.zip
     wget https://raw.githubusercontent.com/andresakti7/mokondo/main/menu/menu.zip
     unzip menu.zip
-    7z e -pKrustyCrab2023!KrustyCrab2023!   ~/menu.zip
+#    7z e -pKrustyCrab2023!KrustyCrab2023!   ~/menu.zip
     chmod +x menu/*
     mv menu/* /usr/local/sbin
     rm -rf menu
