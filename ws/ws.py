@@ -13,7 +13,7 @@ PASS = ''
 BUFLEN = 4096 * 4
 TIMEOUT = 60
 DEFAULT_HOST = '127.0.0.1:22'
-RESPONSE = 'HTTP/1.1 101 <b><font color="red">Geovpn Tunnel</font></b>\r\n\r\n'
+RESPONSE = 'HTTP/1.1 101 <b><font color="red">Saktivpn Tunneling</font></b>\r\n\r\n'
 
 class Server(threading.Thread):
     def __init__(self, host, port):
